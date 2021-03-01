@@ -35,3 +35,9 @@ code: Task.js
 # Delete one inventory details
 
 ![Screenshot 2021-03-01 at 15 59 49](https://user-images.githubusercontent.com/72803388/109518363-77ed4700-7aaa-11eb-9c6f-8e10f742747d.png)
+
+# Form for CRUD operation.
+
+![Screenshot 2021-03-01 at 16 01 39](https://user-images.githubusercontent.com/72803388/109518740-d31f3980-7aaa-11eb-8297-9460be499afe.png)
+
+![Screenshot 2021-03-01 at 16 01 50](https://user-images.githubusercontent.com/72803388/109518747-d61a2a00-7aaa-11eb-9015-d426e7b2d2d6.png)
