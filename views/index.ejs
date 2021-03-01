@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        #heading{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">CRUD Operations</h1>
+    <h1>Get data for a Inventory</h1>
+    <h5>Enter Inv_id of the inventory to get all details</h5>
+    <form action="/getdata/" method="GET" >
+        <input type="number" name="Inv_id" placeholder="Inv_id" id="inputInv_id">
+        <button type="submit" >Click me!</button>  
+    </form>
+    <h1>Create a new Inventory</h1>
+    <h5>Enter all the inventory details</h5>
+    <form action="/addInventory/" method="POST" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="Inv_id" placeholder="Inv_id" id="inputInv_id">
+        <input type="text" name="Inv_name" placeholder="Inv_name" id="inputInv_name">
+        <input type="text" name="Description" placeholder="Description" id="inputDescription">
+        <input type="text" name="model" placeholder="model" id="inputmodel">
+        <input type="number" name="Price" placeholder="Price" id="inputPrice">
+        <input type="number" name="Available_no" placeholder="Available_no" id="inputAvailable_no">
+        <button type="submit" >Click me!</button>    
+    </form>
+    <h1>Update Inventory name</h1>
+    <h5>Enter Inv_id and new inventory name to update</h5>
+    <form action="/updateInventory/" method="POST" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="Inv_id" placeholder="Inv_id" id="inputInv_id">
+        <input type="text" name="Inv_name" placeholder="Inv_name" id="inputInv_name">
+        <button type="submit" >Click me!</button>  
+    </form>
+    <h1>Get all inventory name, who's price is 10.</h1>
+    <h5>Enter price amount in number to get the inventory name</h5>
+    <form action="/inventoryprice/" method="GET">
+        <input type="number" name="Price" placeholder="Price" id="inputPrice">
+        <button type="submit" >Click me!</button>  
+    </form>
+    <h1>Get the list of inventory with a certain attribute, i.e.: all inventory with Faber-Castell Brand</h1>
+    <h5>Enter Inventory Brand name to get the list of inventory details</h5>
+    <form action="/inventoryBrand/" method="GET">
+        <input type="text" name="attribute" placeholder="Enter the attribute" id="attribute">
+        <button type="submit" >Click me!</button>  
+    </form>
+    <h1>Delete one inventory details</h1>
+    <h5>Enter Inv_id and delete that inventory</h5>
+    <form action="/DeleteInv/" method="GET">
+        <input type="text" name="Inv_id" placeholder="Inv_id" id="inputInv_id">
+        <button type="submit" >Click me!</button>  
+    </form>
+</body>
+</html>
